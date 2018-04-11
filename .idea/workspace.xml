@@ -53,11 +53,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestOne.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestOne.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-example/src/test/java/TestOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+            <state relative-caret-position="357">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestTwo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java-example/src/test/java/TestTwo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -432,6 +444,7 @@
       <list>
         <option value="$PROJECT_DIR$/java-example/build.gradle" />
         <option value="$PROJECT_DIR$/java-example/src/test/java/TestOne.java" />
+        <option value="$PROJECT_DIR$/java-example/src/test/java/TestTwo.java" />
       </list>
     </option>
   </component>
@@ -514,7 +527,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestOne.TestOne">
+  <component name="RunManager" selected="JUnit.TestTwo.TestTwo">
     <configuration name="TestOne" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="java-example_test" />
@@ -564,6 +577,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestOne" />
       <option name="METHOD_NAME" value="TestOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestTwo.TestTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="java-example_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestTwo" />
+      <option name="METHOD_NAME" value="TestTwo" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -636,14 +669,16 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Android JUnit.TestOne" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.TestOne.TestOne" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestTwo.TestTwo" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestOne.TestOne" />
-        <item index="1" class="java.lang.String" itemvalue="Android JUnit.TestOne" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestTwo.TestTwo" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestOne.TestOne" />
+        <item index="2" class="java.lang.String" itemvalue="Android JUnit.TestOne" />
       </list>
     </recent_temporary>
   </component>
@@ -664,15 +699,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestOne - 2018.04.11 at 10h 41m 33s.xml">
-      <configuration name="TestOne" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="TestOne - 2018.04.11 at 10h 42m 02s.xml">
-      <configuration name="TestOne" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="TestOne - 2018.04.11 at 10h 43m 16s.xml">
-      <configuration name="TestOne" configurationId="AndroidJUnit" />
-    </history-entry>
     <history-entry file="TestOne - 2018.04.11 at 10h 44m 15s.xml">
       <configuration name="TestOne" configurationId="AndroidJUnit" />
     </history-entry>
@@ -694,6 +720,15 @@
     <history-entry file="TestOne_TestOne - 2018.04.11 at 10h 58m 05s.xml">
       <configuration name="TestOne.TestOne" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestOne_TestOne - 2018.04.11 at 11h 37m 17s.xml">
+      <configuration name="TestOne.TestOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOne_TestOne - 2018.04.11 at 17h 43m 43s.xml">
+      <configuration name="TestOne.TestOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestTwo_TestTwo - 2018.04.11 at 17h 44m 17s.xml">
+      <configuration name="TestTwo.TestTwo" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1050" y="-363" width="1050" height="1680" extended-state="0" />
@@ -713,7 +748,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25338492" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25338492" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -748,8 +783,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java-example/src/test/java/TestOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        <state relative-caret-position="357">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-example/src/test/java/TestTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
