@@ -66,9 +66,11 @@
       <file leaf-file-name="TestThree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestThree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="629">
+              <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -642,9 +644,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestThree - 2018.04.23 at 23h 17m 22s.xml">
-      <configuration name="TestThree" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestThree - 2018.04.24 at 13h 21m 40s.xml">
       <configuration name="TestThree" configurationId="JUnit" />
     </history-entry>
@@ -663,8 +662,11 @@
     <history-entry file="TestThree - 2018.04.24 at 13h 51m 05s.xml">
       <configuration name="TestThree" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTwo - 2018.04.24 at 10h 23m 10s.xml">
-      <configuration name="TestTwo" configurationId="JUnit" />
+    <history-entry file="TestThree - 2018.04.24 at 13h 54m 51s.xml">
+      <configuration name="TestThree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestThree - 2018.04.24 at 13h 55m 58s.xml">
+      <configuration name="TestThree" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestTwo - 2018.04.24 at 10h 23m 44s.xml">
       <configuration name="TestTwo" configurationId="JUnit" />
@@ -777,7 +779,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -811,9 +815,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestThree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="629">
+          <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
