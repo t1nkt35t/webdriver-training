@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/TestFour.java" line="33" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="dae311b0-4501-4731-be8f-a8adfe7ae99e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -66,7 +69,7 @@
       <file leaf-file-name="TestThree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestThree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="170">
               <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -78,8 +81,20 @@
       <file leaf-file-name="TestFour.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestFour.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+            <state relative-caret-position="291">
+              <caret line="30" column="118" lean-forward="true" selection-start-line="30" selection-start-column="118" selection-end-line="30" selection-end-column="118" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestFourFix.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestFourFix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -463,6 +478,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/TestTwo.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestThree.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestFourFix.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestFour.java" />
       </list>
     </option>
@@ -682,17 +698,17 @@
     <history-entry file="TestFour - 2018.04.24 at 17h 49m 15s.xml">
       <configuration name="TestFour" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestThree - 2018.04.24 at 13h 21m 40s.xml">
-      <configuration name="TestThree" configurationId="JUnit" />
+    <history-entry file="TestFour - 2018.04.25 at 17h 26m 07s.xml">
+      <configuration name="TestFour" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestThree - 2018.04.24 at 13h 26m 32s.xml">
-      <configuration name="TestThree" configurationId="JUnit" />
+    <history-entry file="TestFour - 2018.04.25 at 17h 27m 32s.xml">
+      <configuration name="TestFour" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestThree - 2018.04.24 at 13h 31m 52s.xml">
-      <configuration name="TestThree" configurationId="JUnit" />
+    <history-entry file="TestFour - 2018.04.25 at 17h 27m 48s.xml">
+      <configuration name="TestFour" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestThree - 2018.04.24 at 13h 37m 28s.xml">
-      <configuration name="TestThree" configurationId="JUnit" />
+    <history-entry file="TestFour - 2018.04.25 at 17h 28m 03s.xml">
+      <configuration name="TestFour" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestThree - 2018.04.24 at 13h 38m 54s.xml">
       <configuration name="TestThree" configurationId="JUnit" />
@@ -850,8 +866,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestThree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="170">
           <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestFourFix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -860,8 +886,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestFour.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+        <state relative-caret-position="291">
+          <caret line="30" column="118" lean-forward="true" selection-start-line="30" selection-start-column="118" selection-end-line="30" selection-end-column="118" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
