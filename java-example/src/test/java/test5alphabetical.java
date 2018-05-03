@@ -11,6 +11,8 @@ import java.text.Collator;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
+import static com.google.common.base.Verify.verify;
+import static junit.framework.TestCase.assertTrue;
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
 public class test5alphabetical {
@@ -19,8 +21,8 @@ public class test5alphabetical {
 
     @Before
     public void start() {
-        System.setProperty("webdriver.chrome.driver", "c:/_java/chromedriver_win32/chromedriver.exe");
-//        System.setProperty("webdriver.chrome.driver", "E:/_A_R_C_H_i_v_e/Java/_wdlearn/chromedriver_win32/chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "c:/_java/chromedriver_win32/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "E:/_A_R_C_H_i_v_e/Java/_wdlearn/chromedriver_win32/chromedriver.exe");
         driver = new ChromeDriver();
 //        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //        wait = new WebDriverWait(driver,10);
@@ -28,7 +30,6 @@ public class test5alphabetical {
         driver.findElement(By.name("username")).sendKeys("admin");
         driver.findElement(By.name("password")).sendKeys("admin");
         driver.findElement(By.name("login")).click();
-//        wait.until(titleIs("My Store"));
     }
 
     @Test
@@ -65,13 +66,11 @@ public class test5alphabetical {
                 System.out.println(subSet.toString());
                 System.out.println(sortedSubSet.toString());
                 try {
-                    assert (subSet.toString().equals(sortedSubSet.toString()));
+                    verify(subSet.toString().equals(sortedSubSet.toString()));
                 } catch (Exception e) {
                     System.out.println(country + "'s geozones are not in alphabetical order");
                 }
                 ;
-//                subSet = null;
-//                sortedSubSet = null;
                 driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
             }
             Set.add(country);
@@ -80,7 +79,7 @@ public class test5alphabetical {
         System.out.println(Set.toString());
         System.out.println(sortedSet.toString());
         try {
-            assert (Set.toString().equals(sortedSet.toString()));
+            verify(Set.toString().equals(sortedSet.toString()));
         } catch (Exception e) {
             System.out.println("Countries are not in alphabetical order");
         }
