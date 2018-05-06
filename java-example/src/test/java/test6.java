@@ -3,12 +3,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.lang.reflect.Field;
-import java.text.Collator;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
@@ -41,11 +38,11 @@ public class test6 {
 
         String mainRegularColor = driver.findElement(By.xpath("//div[@id=\"box-campaigns\"]//s[@class='regular-price']")).getCssValue("color");
 
-        List<String> mainRegularColors = Tools.split(Arrays.asList(mainRegularColor.split(",")));
+        List<String> mainRegularColors = Tools.digitize(Arrays.asList(mainRegularColor.split(",")));
 
         String mainCampaignColor = driver.findElement(By.xpath("//div[@id=\"box-campaigns\"]//strong[@class='campaign-price']")).getCssValue("color");
 
-        List<String> mainCampaignColors = Tools.split( Arrays.asList(mainCampaignColor.split(",")));
+        List<String> mainCampaignColors = Tools.digitize( Arrays.asList(mainCampaignColor.split(",")));
 
         driver.findElement( By.xpath( "//div[@id='box-campaigns']//a[@class=\"link\"]" ) ).click();
         String pageName = driver.findElement(By.xpath("//h1[@itemprop = 'name']")).getAttribute("textContent");
@@ -59,15 +56,37 @@ public class test6 {
 
         String pageRegularColor = driver.findElement(By.xpath("//s[@class='regular-price']")).getCssValue("color");
 
-        List<String> pageRegularColors = Tools.split(Arrays.asList(pageRegularColor.split(",")));
+        List<String> pageRegularColors = Tools.digitize(Arrays.asList(pageRegularColor.split(",")));
 
         String pageCampaignColor = driver.findElement(By.xpath("//strong[@class='campaign-price']")).getCssValue("color");
 
-        List<String> pageCampaignColors = Tools.split(Arrays.asList(pageCampaignColor.split(",")));
+        List<String> pageCampaignColors = Tools.digitize(Arrays.asList(pageCampaignColor.split(",")));
 
+////а) на главной странице и на странице товара совпадает текст названия товара
+//        verify(mainName.equals( pageName ));
+////б) на главной странице и на странице товара совпадают цены (обычная и акционная)
+//        verify(mainOldPrice.equals( pageOldPrice ));
+//        verify(mainSalePrice.equals( pageSalePrice ));
+////в) обычная цена зачёркнутая и серая
+//        verify(mainRegularColors.get(0).equals( mainRegularColors.get(1)));
+//        verify(mainRegularColors.get(1).equals( mainRegularColors.get(2)));
+////        verify(mainCampaignColors.get(0).equals(mainCampaignColors.get(1)));
+////        verify(mainCampaignColors.get(1).equals(mainCampaignColors.get(2)));
+//        verify(pageRegularStrike.equals( "line-through" ));
+//        verify(mainRegularStrike.equals( "line-through" ));
+////г) акционная жирная и красная
+//        verify(mainCampaignColors.get(1).equals( "0" ));
+//        verify(mainCampaignColors.get(2).equals( "0" ));
+//        verify(pageCampaignColors.get(1).equals( "0" ));
+//        verify(pageCampaignColors.get(2).equals( "0" ));
+//        verify(mainSaleFontWeight.equals( "700" ));
+//        verify(pageSaleFontWeight.equals( "700" ));
+////д) акционная цена крупнее, чем обычная
+//        verify(Tools.stringInt(mainSaleFontSize) > Tools.stringInt(mainRegFontSize));
+//        verify(Tools.stringInt(pageSaleFontSize) > Tools.stringInt(pageRegFontSize));
 
-
-        System.out.println(mainName);
+        System.out.println(mainRegularColors.get(0));
+        System.out.println(mainRegularColors.get(0) == ( mainRegularColors.get(1)));
         System.out.println(mainOldPrice);
         System.out.println(mainSalePrice);
         System.out.println(mainSaleFontWeight);
