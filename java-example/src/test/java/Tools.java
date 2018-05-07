@@ -12,10 +12,10 @@ public class Tools {
         return list;
     }
 
-    public static Integer stringInt (String input) {
-
-        String str = input.replaceAll( "\\D+", "" );
-        System.out.println( Integer.valueOf(str) );
-        return Integer.valueOf(str);
-    }
+//    public static Integer stringInt (String input) {
+//
+//        String str = input.replaceAll( "\\D+", "" );
+//        System.out.println( Integer.valueOf(str) );
+//        return Integer.valueOf(str);
+//    }
 }
