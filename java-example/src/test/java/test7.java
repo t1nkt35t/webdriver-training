@@ -1,3 +1,4 @@
+import javafx.scene.control.Tab;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -5,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -36,14 +38,12 @@ public class test7 {
                 Keys.TAB + "Testov" + Keys.TAB + "prospekt mira, 10-1" + Keys.TAB + Keys.TAB + 53312 + Keys.TAB + "Moscow");
         Select dropdownCountry = new Select(driver.findElement(By.name("country_code")));
         dropdownCountry.selectByVisibleText("United States");
-//        Select dropdownState = new Select(driver.findElement(By.name("zone_code")));
-//        dropdownCountry.selectByIndex(1);
-////        selectByVisibleText("Alaska");
-//        driver.findElement(By.name("zone_code")).click();
-//        driver.findElement(By.xpath("//select[@name=\"zone_code\"]//option[@value=\"AK\"]")).click();
-        driver.findElement(By.xpath("//input[@name=\"e-mail\"]")).sendKeys("lil@yaz.ru" +
-                Keys.TAB + "+78754334332" + Keys.TAB + Keys.SPACE + Keys.TAB + "qwe123" + Keys.TAB +
-                "qwe123" + Keys.TAB + Keys.ENTER);
+        new Actions(driver).moveToElement(driver.findElement(By.xpath("//select[@name='zone_code']"))).click().perform();
+        driver.findElement(By.xpath("//select[@name='zone_code']/option[@value='AK']")).click();
+        Select dropdownState = new Select(driver.findElement(By.name("country_code")));
+//        driver.findElement(By.xpath("//input[@name=\"email\"]")).sendKeys("lil@yaz.ru" +
+//                Keys.TAB + "+78754334332" + Keys.TAB + Keys.SPACE + Keys.TAB + "qwe123" + Keys.TAB +
+//                "qwe123" + Keys.TAB + Keys.ENTER);
     }
 
     @After
