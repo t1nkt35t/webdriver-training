@@ -4,6 +4,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.*;
@@ -17,9 +19,13 @@ public class test6 {
 
     @Before
     public void start() {
-        System.setProperty("webdriver.chrome.driver", "c:/_java/chromedriver_win32/chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "c:/_java/chromedriver_win32/chromedriver.exe");
+        System.setProperty("webdriver.ie.driver", "E:/_A_R_C_H_i_v_e/Java/_wdlearn/ie32/IEDriverServer.exe");
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, true);
 //        System.setProperty("webdriver.chrome.driver", "E:/_A_R_C_H_i_v_e/Java/_wdlearn/chromedriver_win32/chromedriver.exe");
-        driver = new ChromeDriver();
+//        driver = new ChromeDriver();
+        driver = new InternetExplorerDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //        wait = new WebDriverWait(driver,10);
     }
@@ -28,6 +34,11 @@ public class test6 {
     public void test6() {
 
         driver.get("http://localhost/litecart");
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         String mainName = driver.findElement(By.xpath("//div[@id='box-campaigns']//div[@class=\"name\"]")).getAttribute("textContent");
         String mainOldPrice = driver.findElement(By.xpath("//div[@id=\"box-campaigns\"]//s[@class='regular-price']")).getAttribute("textContent");
         String mainSalePrice = driver.findElement(By.xpath("//div[@id=\"box-campaigns\"]//strong[@class='campaign-price']")).getAttribute("textContent");
@@ -78,8 +89,8 @@ public class test6 {
         verify(mainCampaignColors.get(2).equals( "0" ));
         verify(pageCampaignColors.get(1).equals( "0" ));
         verify(pageCampaignColors.get(2).equals( "0" ));
-        verify(mainSaleFontWeight.equals( "700" ));
-        verify(pageSaleFontWeight.equals( "700" ));
+        verify(Integer.valueOf(mainSaleFontWeight) >= 700 );
+        verify(Integer.valueOf(pageSaleFontWeight) >= 700 );
 //д) акционная цена крупнее, чем обычная
         Float regFontSizeMain = Float.valueOf(mainRegFontSize.substring(0, mainRegFontSize.length() - 2));
         Float saleFontSizeMain = Float.valueOf(mainSaleFontSize.substring(0, mainSaleFontSize.length() - 2));
