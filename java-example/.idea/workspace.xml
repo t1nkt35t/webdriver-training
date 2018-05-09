@@ -70,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test6.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test6.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/test6.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="93" column="40" lean-forward="true" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+            <state relative-caret-position="374">
+              <caret line="92" column="60" lean-forward="true" selection-start-line="91" selection-start-column="8" selection-end-line="92" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test7.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test7.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/test7.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="41" column="96" lean-forward="true" selection-start-line="41" selection-start-column="96" selection-end-line="41" selection-end-column="96" />
+            <state relative-caret-position="527">
+              <caret line="47" column="50" lean-forward="true" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -474,8 +474,8 @@
         <option value="$PROJECT_DIR$/src/test/java/test5alphabetical.java" />
         <option value="$PROJECT_DIR$/src/test/java/test5zones.java" />
         <option value="$PROJECT_DIR$/src/test/java/Tools.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test7.java" />
         <option value="$PROJECT_DIR$/src/test/java/test6.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test7.java" />
       </list>
     </option>
   </component>
@@ -668,34 +668,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test6 - 2018.05.09 at 14h 25m 28s.xml">
-      <configuration name="test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test6 - 2018.05.09 at 14h 28m 34s.xml">
-      <configuration name="test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test6 - 2018.05.09 at 14h 30m 21s.xml">
-      <configuration name="test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test6 - 2018.05.09 at 14h 48m 29s.xml">
-      <configuration name="test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test6 - 2018.05.09 at 15h 03m 17s.xml">
-      <configuration name="test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test6 - 2018.05.09 at 15h 30m 52s.xml">
-      <configuration name="test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test6 - 2018.05.09 at 15h 39m 33s.xml">
-      <configuration name="test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test6 - 2018.05.09 at 15h 41m 10s.xml">
-      <configuration name="test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test7 - 2018.05.09 at 15h 46m 29s.xml">
+    <history-entry file="test7 - 2018.05.09 at 16h 49m 26s.xml">
       <configuration name="test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test7 - 2018.05.09 at 15h 46m 45s.xml">
+    <history-entry file="test7 - 2018.05.09 at 16h 50m 06s.xml">
+      <configuration name="test7" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test7 - 2018.05.09 at 16h 51m 56s.xml">
+      <configuration name="test7" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test7 - 2018.05.09 at 16h 55m 22s.xml">
+      <configuration name="test7" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test7 - 2018.05.09 at 16h 56m 19s.xml">
+      <configuration name="test7" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test7 - 2018.05.09 at 17h 09m 10s.xml">
+      <configuration name="test7" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test7 - 2018.05.09 at 17h 09m 56s.xml">
+      <configuration name="test7" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test7 - 2018.05.09 at 17h 13m 57s.xml">
+      <configuration name="test7" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test7 - 2018.05.09 at 17h 15m 22s.xml">
+      <configuration name="test7" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test7 - 2018.05.09 at 17h 16m 40s.xml">
       <configuration name="test7" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1140,20 +1140,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="41" column="96" lean-forward="true" selection-start-line="41" selection-start-column="96" selection-end-line="41" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="93" column="40" lean-forward="true" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+        <state relative-caret-position="374">
+          <caret line="92" column="60" lean-forward="true" selection-start-line="91" selection-start-column="8" selection-end-line="92" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="47" column="50" lean-forward="true" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
         </state>
       </provider>
     </entry>

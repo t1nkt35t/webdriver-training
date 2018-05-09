@@ -35,15 +35,24 @@ public class test7 {
         driver.get("http://localhost/litecart");
         driver.findElement(By.xpath("//form[@name=\"login_form\"]//a[contains(text(), \"New customers click here\")]")).click();
         driver.findElement(By.xpath("//input[@name = \"firstname\"]")).sendKeys("Test" +
-                Keys.TAB + "Testov" + Keys.TAB + "prospekt mira, 10-1" + Keys.TAB + Keys.TAB + 53312 + Keys.TAB + "Moscow");
+                Keys.TAB + "Testov" + Keys.TAB + "prospekt mira, 10-1" + Keys.TAB + Keys.TAB + 53312 +
+                Keys.TAB + "Moscow");
+
         Select dropdownCountry = new Select(driver.findElement(By.name("country_code")));
         dropdownCountry.selectByVisibleText("United States");
         new Actions(driver).moveToElement(driver.findElement(By.xpath("//select[@name='zone_code']"))).click().perform();
+        String email = "kel13@yaz.ru";
         driver.findElement(By.xpath("//select[@name='zone_code']/option[@value='AK']")).click();
-        Select dropdownState = new Select(driver.findElement(By.name("country_code")));
-//        driver.findElement(By.xpath("//input[@name=\"email\"]")).sendKeys("lil@yaz.ru" +
-//                Keys.TAB + "+78754334332" + Keys.TAB + Keys.SPACE + Keys.TAB + "qwe123" + Keys.TAB +
-//                "qwe123" + Keys.TAB + Keys.ENTER);
+        driver.findElement(By.xpath("//input[@name=\"email\"]")).sendKeys( email +
+                Keys.TAB + "+78754334332" + Keys.TAB + Keys.SPACE + Keys.TAB + "qwe123" + Keys.TAB +
+                "qwe123" + Keys.TAB + Keys.ENTER);
+
+        driver.findElement(By.xpath("//div[@id='box-account']//li/a[contains(text(), 'Logout')]" )).click();
+        driver.findElement(By.xpath("//div[@id='box-account-login']//td//input[@name='email']" )).sendKeys( email );
+        driver.findElement(By.xpath("//div[@id='box-account-login']//td//input[@name='password']" )).sendKeys( "qwe123" );
+        driver.findElement(By.xpath("//div[@id='box-account-login']//span[@class='button-set']/button[@name='login']" )).click();
+        driver.findElement(By.xpath("//div[@id='box-account']//li/a[contains(text(), 'Logout')]" )).click();
+
     }
 
     @After
