@@ -43,6 +43,7 @@ public class test8 {
         act.sendKeys(Keys.TAB + "Good" + Keys.TAB + "777").perform();
         driver.findElement(By.xpath("//div[@id='tab-general']//input[@name='date_valid_from']")).sendKeys("11052018");
         driver.findElement(By.xpath("//div[@id='tab-general']//input[@name='date_valid_to']")).sendKeys("11052019");
+        driver.findElement(By.xpath("//ul[@class='index']//a[contains(text(), 'Information')]")).click();
 //        act.sendKeys(Keys.TAB  + "11052018" + Keys.TAB + "11062019").perform();
 //        driver.findElement(By.xpath("//input[@name = \"firstname\"]")).sendKeys("Test" +
 //                Keys.TAB + "Testov" + Keys.TAB + "prospekt mira, 10-1" + Keys.TAB + Keys.TAB + 53312 +

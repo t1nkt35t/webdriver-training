@@ -50,7 +50,7 @@ public class test7 {
         driver.findElement(By.xpath("//input[@name=\"password\"]")).sendKeys("qwe123");
         driver.findElement(By.xpath("//input[@name=\"confirmed_password\"]")).sendKeys("qwe123");
         driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
-        
+
         driver.findElement(By.xpath("//div[@id='box-account']//li/a[contains(text(), 'Logout')]" )).click();
         driver.findElement(By.xpath("//div[@id='box-account-login']//td//input[@name='email']" )).sendKeys( email );
         driver.findElement(By.xpath("//div[@id='box-account-login']//td//input[@name='password']" )).sendKeys( "qwe123" );
