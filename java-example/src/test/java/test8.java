@@ -11,14 +11,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
+import static com.sun.javaws.JnlpxArgs.verify;
+
 public class test8 {
     private WebDriver driver;
     private WebDriverWait wait;
 
     @Before
     public void start() {
-        System.setProperty("webdriver.chrome.driver", "c:/_java/chromedriver_win32/chromedriver.exe");
-//        System.setProperty("webdriver.chrome.driver", "E:/_A_R_C_H_i_v_e/Java/_wdlearn/chromedriver_win32/chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "c:/_java/chromedriver_win32/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "E:/_A_R_C_H_i_v_e/Java/_wdlearn/chromedriver_win32/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //        wait = new WebDriverWait(driver,10);
@@ -34,35 +36,41 @@ public class test8 {
         driver.findElement(By.xpath("//td[@id='sidebar']//a//span[contains(text(), 'Catalog')]")).click();
         driver.findElement(By.xpath("//td[@id='content']//a[contains(text(), ' Add New Product')]")).click();
         driver.findElement(By.xpath("//div[@id='tab-general']//label[contains(text(), ' Enabled')]")).click();
-        Actions act = new Actions(driver);
-        act.sendKeys(Keys.TAB + "Good" + Keys.TAB + "777").perform();
+        String name = "Good";
+        driver.findElement(By.xpath("//div[@id='tab-general']//input[@name='name[en]']")).sendKeys(name);
+        driver.findElement(By.xpath("//div[@id='tab-general']//input[@name='code']")).sendKeys("777");
+
         driver.findElement(By.xpath("//tr/td[contains(text(),'Male')]/preceding-sibling::td/input")).click();
         driver.findElement(By.xpath("//div[@id='tab-general']//table//input[@name='quantity']")).clear();
+        Actions act = new Actions(driver);
         act.sendKeys("20").perform();
         driver.findElement(By.xpath("//div[@id='tab-general']//table//input[@type='file']")).sendKeys(System.getProperty("user.dir") + "\\Beer-500x592.png");
-        act.sendKeys(Keys.TAB + "Good" + Keys.TAB + "777").perform();
         driver.findElement(By.xpath("//div[@id='tab-general']//input[@name='date_valid_from']")).sendKeys("11052018");
         driver.findElement(By.xpath("//div[@id='tab-general']//input[@name='date_valid_to']")).sendKeys("11052019");
+
         driver.findElement(By.xpath("//ul[@class='index']//a[contains(text(), 'Information')]")).click();
-//        act.sendKeys(Keys.TAB  + "11052018" + Keys.TAB + "11062019").perform();
-//        driver.findElement(By.xpath("//input[@name = \"firstname\"]")).sendKeys("Test" +
-//                Keys.TAB + "Testov" + Keys.TAB + "prospekt mira, 10-1" + Keys.TAB + Keys.TAB + 53312 +
-//                Keys.TAB + "Moscow");
-//
-//        Select dropdownCountry = new Select(driver.findElement(By.name("country_code")));
-//        dropdownCountry.selectByVisibleText("United States");
-//        new Actions(driver).moveToElement(driver.findElement(By.xpath("//select[@name='zone_code']"))).click().perform();
-//        String email = "kel13@yaz.ru";
-//        driver.findElement(By.xpath("//select[@name='zone_code']/option[@value='AK']")).click();
-//        driver.findElement(By.xpath("//input[@name=\"email\"]")).sendKeys( email +
-//                Keys.TAB + "+78754334332" + Keys.TAB + Keys.SPACE + Keys.TAB + "qwe123" + Keys.TAB +
-//                "qwe123" + Keys.TAB + Keys.ENTER);
-//
-//        driver.findElement(By.xpath("//div[@id='box-account']//li/a[contains(text(), 'Logout')]" )).click();
-//        driver.findElement(By.xpath("//div[@id='box-account-login']//td//input[@name='email']" )).sendKeys( email );
-//        driver.findElement(By.xpath("//div[@id='box-account-login']//td//input[@name='password']" )).sendKeys( "qwe123" );
-//        driver.findElement(By.xpath("//div[@id='box-account-login']//span[@class='button-set']/button[@name='login']" )).click();
-//        driver.findElement(By.xpath("//div[@id='box-account']//li/a[contains(text(), 'Logout')]" )).click();
+
+        Select manufact = new Select (driver.findElement(By.xpath("//div[@id='tab-information']//select[@name='manufacturer_id']")));
+        manufact.selectByVisibleText( "ACME Corp." );
+        driver.findElement(By.xpath("//div[@id='tab-information']//input[@name='keywords']")).sendKeys( "Pivo, pivko, pivasik, birra, beer" );
+        driver.findElement(By.xpath("//div[@id='tab-information']//input[@name='short_description[en]']")).sendKeys( "Pivandriy" );
+        driver.findElement(By.xpath("//div[@id='tab-information']//div[@class='trumbowyg-editor']")).sendKeys( "Pyvo vono i e Pyvo" );
+        driver.findElement(By.xpath("//div[@id='tab-information']//input[@name='head_title[en]']")).sendKeys( "P.I.V.A.S" );
+        driver.findElement(By.xpath("//div[@id='tab-information']//input[@name='meta_description[en]']")).sendKeys( "when you have a beer, you are a real fat guy" );
+        driver.findElement(By.xpath("//ul[@class='index']//a[contains(text(), 'Prices')]")).click();
+
+        driver.findElement(By.xpath("//div[@id='tab-prices']//input[@name='purchase_price']")).clear();
+        act.sendKeys( "1" );
+        Select price = new Select (driver.findElement(By.xpath("//div[@id='tab-prices']//select[@name='purchase_price_currency_code']")));
+        price.selectByVisibleText( "Euros" );
+        driver.findElement(By.xpath("//div[@id='tab-prices']//input[@name='prices[USD]']")).sendKeys( "7" );
+        driver.findElement(By.xpath("//div[@id='tab-prices']//input[@name='prices[EUR]']")).sendKeys( "5" );
+
+        driver.findElement(By.xpath("//span[@class='button-set']/button[@name='save']")).click();
+
+        driver.findElement(By.xpath("//td[@id='sidebar']//a//span[contains(text(), 'Catalog')]")).click();
+        String check = driver.findElement(By.xpath("//table[@class='dataTable']")).getText();
+        assert(check.contains( name ));
 
     }
 
