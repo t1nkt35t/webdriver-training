@@ -22,8 +22,8 @@ public class test7 {
 
     @Before
     public void start() {
-//        System.setProperty("webdriver.chrome.driver", "c:/_java/chromedriver_win32/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "E:/_A_R_C_H_i_v_e/Java/_wdlearn/chromedriver_win32/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "c:/_java/chromedriver_win32/chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "E:/_A_R_C_H_i_v_e/Java/_wdlearn/chromedriver_win32/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //        wait = new WebDriverWait(driver,10);
@@ -34,19 +34,23 @@ public class test7 {
 
         driver.get("http://localhost/litecart");
         driver.findElement(By.xpath("//form[@name=\"login_form\"]//a[contains(text(), \"New customers click here\")]")).click();
-        driver.findElement(By.xpath("//input[@name = \"firstname\"]")).sendKeys("Test" +
-                Keys.TAB + "Testov" + Keys.TAB + "prospekt mira, 10-1" + Keys.TAB + Keys.TAB + 53312 +
-                Keys.TAB + "Moscow");
+        driver.findElement(By.xpath("//input[@name = \"firstname\"]")).sendKeys("Test");
+        driver.findElement(By.xpath("//input[@name = \"lastname\"]")).sendKeys("Testov");
+        driver.findElement(By.xpath("//input[@name = \"address1\"]")).sendKeys("prospekt mira, 10-1");
+        driver.findElement(By.xpath("//input[@name=\"postcode\"]")).sendKeys("53312");
+        driver.findElement(By.xpath("//input[@name=\"city\"]")).sendKeys("Moscow");
 
         Select dropdownCountry = new Select(driver.findElement(By.name("country_code")));
         dropdownCountry.selectByVisibleText("United States");
         new Actions(driver).moveToElement(driver.findElement(By.xpath("//select[@name='zone_code']"))).click().perform();
-        String email = "kel13@yaz.ru";
+        String email = Tools.timeStamp("yyyy.MM.dd.HH.mm.ss") + "@test.ru";
         driver.findElement(By.xpath("//select[@name='zone_code']/option[@value='AK']")).click();
-        driver.findElement(By.xpath("//input[@name=\"email\"]")).sendKeys( email +
-                Keys.TAB + "+78754334332" + Keys.TAB + Keys.SPACE + Keys.TAB + "qwe123" + Keys.TAB +
-                "qwe123" + Keys.TAB + Keys.ENTER);
-
+        driver.findElement(By.xpath("//input[@name=\"email\"]")).sendKeys( Tools.timeStamp("yyyy.MM.dd.HH.mm.ss") + "@test.ru" );
+        driver.findElement(By.xpath("//input[@name=\"phone\"]")).sendKeys("+78754334332");
+        driver.findElement(By.xpath("//input[@name=\"password\"]")).sendKeys("qwe123");
+        driver.findElement(By.xpath("//input[@name=\"confirmed_password\"]")).sendKeys("qwe123");
+        driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
+        
         driver.findElement(By.xpath("//div[@id='box-account']//li/a[contains(text(), 'Logout')]" )).click();
         driver.findElement(By.xpath("//div[@id='box-account-login']//td//input[@name='email']" )).sendKeys( email );
         driver.findElement(By.xpath("//div[@id='box-account-login']//td//input[@name='password']" )).sendKeys( "qwe123" );
