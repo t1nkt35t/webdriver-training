@@ -18,8 +18,8 @@ public class test9 {
 
     @Before
     public void start() {
-        System.setProperty("webdriver.chrome.driver", "c:/_java/chromedriver_win32/chromedriver.exe");
-//        System.setProperty("webdriver.chrome.driver", "E:/_A_R_C_H_i_v_e/Java/_wdlearn/chromedriver_win32/chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "c:/_java/chromedriver_win32/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "E:/_A_R_C_H_i_v_e/Java/_wdlearn/chromedriver_win32/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver,10);
@@ -32,7 +32,11 @@ public class test9 {
         for (int i = 0; i<=2; i++) {
             driver.findElement(By.xpath("//div[@id='box-most-popular']//a[@class=\"link\"]")).click();
             int count = Integer.valueOf(driver.findElement(By.xpath("//div[@id='cart']//span[@class='quantity']")).getText());
-            if (!(ExpectedConditions.invisibilityOf(By.xpath("//select[@name='options[Size]']")) {
+            try {
+                Select size = new Select(driver.findElement(By.xpath("//select[@name='options[Size]']")));
+                size.selectByVisibleText( "Small" );
+            }
+            catch(Exception e) {
 
             }
             System.out.println(count);
@@ -40,7 +44,7 @@ public class test9 {
             wait.until(ExpectedConditions.attributeContains(By.xpath("//div[@id='cart']//span[@class='quantity']"), "textContent" ,String.valueOf(count + 1)));
             driver.findElement(By.xpath("//nav[@id='breadcrumbs']//a")).click();
         }
-//        driver.findElement(By.xpath("//div[@id='tab-general']//input[@name='code']")).sendKeys("777");
+        driver.findElement(By.xpath("//div[@id='cart']//a[contains (text(), 'Checkout')]")).click();
 //
 //        driver.findElement(By.xpath("//tr/td[contains(text(),'Male')]/preceding-sibling::td/input")).click();
 //        driver.findElement(By.xpath("//div[@id='tab-general']//table//input[@name='quantity']")).clear();
