@@ -45,7 +45,7 @@ public class test7 {
         new Actions(driver).moveToElement(driver.findElement(By.xpath("//select[@name='zone_code']"))).click().perform();
         String email = Tools.timeStamp("yyyy.MM.dd.HH.mm.ss") + "@test.ru";
         driver.findElement(By.xpath("//select[@name='zone_code']/option[@value='AK']")).click();
-        driver.findElement(By.xpath("//input[@name=\"email\"]")).sendKeys( Tools.timeStamp("yyyy.MM.dd.HH.mm.ss") + "@test.ru" );
+        driver.findElement(By.xpath("//input[@name=\"email\"]")).sendKeys( email );
         driver.findElement(By.xpath("//input[@name=\"phone\"]")).sendKeys("+78754334332");
         driver.findElement(By.xpath("//input[@name=\"password\"]")).sendKeys("qwe123");
         driver.findElement(By.xpath("//input[@name=\"confirmed_password\"]")).sendKeys("qwe123");

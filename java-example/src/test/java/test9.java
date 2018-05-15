@@ -2,7 +2,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -11,30 +10,24 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
-import static com.sun.javaws.JnlpxArgs.verify;
-
-public class test8 {
+public class test9 {
     private WebDriver driver;
     private WebDriverWait wait;
 
     @Before
     public void start() {
-        System.setProperty("webdriver.chrome.driver", "c:/_java/chromedriver_win32/chromedriver.exe");
-//        System.setProperty("webdriver.chrome.driver", "E:/_A_R_C_H_i_v_e/Java/_wdlearn/chromedriver_win32/chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "c:/_java/chromedriver_win32/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "E:/_A_R_C_H_i_v_e/Java/_wdlearn/chromedriver_win32/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //        wait = new WebDriverWait(driver,10);
-        driver.get("http://localhost/litecart/admin");
-        driver.findElement(By.name("username")).sendKeys("admin");
-        driver.findElement(By.name("password")).sendKeys("admin");
-        driver.findElement(By.name("login")).click();
     }
 
     @Test
     public void test8() {
 
-        driver.findElement(By.xpath("//td[@id='sidebar']//a//span[contains(text(), 'Catalog')]")).click();
-        driver.findElement(By.xpath("//td[@id='content']//a[contains(text(), ' Add New Product')]")).click();
+        driver.get("http://localhost/litecart/");
+        driver.findElement(By.xpath("//div[@id='box-most-popular']//a[@class=\"link\"]")).click();
         driver.findElement(By.xpath("//div[@id='tab-general']//label[contains(text(), ' Enabled')]")).click();
         String name = "Good";
         driver.findElement(By.xpath("//div[@id='tab-general']//input[@name='name[en]']")).sendKeys(name);
