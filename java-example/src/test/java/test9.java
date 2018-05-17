@@ -48,11 +48,12 @@ public class test9 {
         }
     driver.findElement(By.xpath("//div[@id='cart']//a[contains (text(), 'Checkout')]")).click();
     while (driver.findElements(By.xpath("//div[@id='order_confirmation-wrapper']//td[@class='item']")).size() != 0) {
-//        WebElement remove = driver.findElement(By.xpath("//form[@name='cart_form']//button[@name='remove_cart_item']"));
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//form[@name='cart_form']//button[@name='remove_cart_item']"))));
-        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//form[@name='cart_form']//button[@name='remove_cart_item']")))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//form[@name='cart_form']//button[@name='remove_cart_item']"))));
+        driver.findElement(By.xpath("//form[@name='cart_form']//button[@name='remove_cart_item']")).click();
+        wait.until(ExpectedConditions.stalenessOf(driver.findElement(By.xpath("//form[@name='cart_form']//button[@name='remove_cart_item']"))));
     }
-//        List<WebElement> items = driver.findElements(By.xpath("//div[@id='order_confirmation-wrapper']//td[@class='item']"));
+    wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@id='checkout-cart-wrapper']//em"))));
+    assert((driver.findElement(By.xpath("//div[@id='checkout-cart-wrapper']//em")).getText()).equals("There are no items in your cart."));
     }
 
     @After

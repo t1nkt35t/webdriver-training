@@ -18,11 +18,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="test8.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test8.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="test9.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/test9.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="48" column="83" lean-forward="false" selection-start-line="48" selection-start-column="83" selection-end-line="48" selection-end-column="83" />
+            <state relative-caret-position="253">
+              <caret line="46" column="69" lean-forward="true" selection-start-line="46" selection-start-column="69" selection-end-line="46" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -237,34 +247,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test9 - 2018.05.15 at 20h 07m 41s.xml">
+    <history-entry file="test9 - 2018.05.17 at 10h 40m 09s.xml">
       <configuration name="test9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test9 - 2018.05.16 at 12h 32m 02s.xml">
+    <history-entry file="test9 - 2018.05.17 at 10h 41m 51s.xml">
       <configuration name="test9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test9 - 2018.05.16 at 12h 32m 32s.xml">
+    <history-entry file="test9 - 2018.05.17 at 10h 59m 02s.xml">
       <configuration name="test9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test9 - 2018.05.16 at 16h 18m 38s.xml">
+    <history-entry file="test9 - 2018.05.17 at 11h 18m 42s.xml">
       <configuration name="test9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test9 - 2018.05.16 at 16h 20m 39s.xml">
+    <history-entry file="test9 - 2018.05.17 at 11h 22m 35s.xml">
       <configuration name="test9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test9 - 2018.05.16 at 16h 21m 09s.xml">
+    <history-entry file="test9 - 2018.05.17 at 11h 23m 52s.xml">
       <configuration name="test9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test9 - 2018.05.16 at 16h 27m 40s.xml">
+    <history-entry file="test9 - 2018.05.17 at 11h 34m 26s.xml">
       <configuration name="test9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test9 - 2018.05.16 at 16h 28m 58s.xml">
+    <history-entry file="test9 - 2018.05.17 at 11h 36m 43s.xml">
       <configuration name="test9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test9 - 2018.05.16 at 17h 17m 49s.xml">
+    <history-entry file="test9 - 2018.05.17 at 11h 39m 35s.xml">
       <configuration name="test9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test9 - 2018.05.16 at 17h 22m 38s.xml">
+    <history-entry file="test9 - 2018.05.17 at 11h 41m 09s.xml">
       <configuration name="test9" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -353,25 +363,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test7.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/test6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        <state relative-caret-position="-1139">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test6.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/test7.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="11" />
+        <state relative-caret-position="34">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test5zones.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -384,10 +395,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test9.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="48" column="83" lean-forward="false" selection-start-line="48" selection-start-column="83" selection-end-line="48" selection-end-column="83" />
+        <state relative-caret-position="253">
+          <caret line="46" column="69" lean-forward="true" selection-start-line="46" selection-start-column="69" selection-end-line="46" selection-end-column="69" />
           <folding />
         </state>
       </provider>
