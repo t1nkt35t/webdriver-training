@@ -28,7 +28,7 @@ public class test9 {
     }
 
     @Test
-    public void test8() {
+    public void test9() {
 
         driver.get("http://localhost/litecart/");
         for (int i = 0; i<=2; i++) {

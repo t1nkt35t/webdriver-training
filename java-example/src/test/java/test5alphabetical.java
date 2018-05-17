@@ -51,7 +51,7 @@ public class test5alphabetical {
             } else {
                 Set<String> subSet = new LinkedHashSet<>();
                 SortedSet<String> sortedSubSet = new TreeSet<String>(collator);
-                System.out.println(name.findElement(By.xpath("./a")).getAttribute("href"));
+//                System.out.println(name.findElement(By.xpath("./a")).getAttribute("href"));
                 driver.get(name.findElement(By.xpath("./a")).getAttribute("href"));
 //                System.out.println(driver.getCurrentUrl());
                 List<WebElement> zonesEdit = driver.findElements(By.xpath("//table[@id=\"table-zones\"]//td[3]"));
@@ -63,8 +63,8 @@ public class test5alphabetical {
                         sortedSubSet.add(zoneName);
                     }
                 }
-                System.out.println(subSet.toString());
-                System.out.println(sortedSubSet.toString());
+//                System.out.println(subSet.toString());
+//                System.out.println(sortedSubSet.toString());
                 try {
                     verify(subSet.toString().equals(sortedSubSet.toString()));
                 } catch (Exception e) {
@@ -76,8 +76,8 @@ public class test5alphabetical {
             Set.add(country);
             sortedSet.add(country);
         }
-        System.out.println(Set.toString());
-        System.out.println(sortedSet.toString());
+//        System.out.println(Set.toString());
+//        System.out.println(sortedSet.toString());
         try {
             verify(Set.toString().equals(sortedSet.toString()));
         } catch (Exception e) {
