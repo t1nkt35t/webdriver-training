@@ -46,8 +46,7 @@ public class test10 {
                     e.printStackTrace();
                 }
             }
-            Set<String> allWindows = driver.getWindowHandles();
-            for (String window : allWindows) {
+            for (String window : driver.getWindowHandles()) {
                 if (!(window.equals( mainWindow ))) {
                     newWindow = window;
                 }
